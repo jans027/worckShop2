@@ -17,7 +17,11 @@ const MySwal = withReactContent(Swal)
 
 
 export default class SignUp extends Component {
-
+// sweat alert
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+import { Form } from '../styles/Form'
+const MySwal = withReactContent(Swal)
     state = {
         form: {
             name: '',
@@ -152,44 +156,6 @@ export default class SignUp extends Component {
                 console.log(e);
             })
     }
-
-    render() {
-        return (
-            <Section>
-                <Form >
-                    <form>
-                        <Textos1>
-                            <h2>Welcome back</h2>
-                            <p>
-                                Sign in to an existing account using your phone number
-                            </p>
-                        </Textos1>
-                        <input 
-                        name="phone" 
-                        type="tel" 
-                        placeholder="+148910235" 
-                        onChange={this.handleChange}
-                        />
-                        <input 
-                        name="password" 
-                        type="password" 
-                        placeholder="password"
-                        onChange={this.handleChange}
-                        />
-                        <DivBotonForm>
-                            <button 
-                                onClick={this.handleLogin}>
-                                Login
-                            </button>
-                            <p>Don't have account ?<Link to={`/SignUp`}>Sign up</Link></p>
-                        </DivBotonForm>
-                    </form>
-                </Form>
-            </Section>
-        )
-    }
-}
-
 
 
 
