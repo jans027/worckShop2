@@ -1,15 +1,15 @@
 
-import React from "react";
+import axios from "axios";
+import React, { Component } from 'react'
+import {Textos1, BotonReguistro,Enlace1, DivBotonForm, Section, Form } from '../styles/StylesGlobal'
+import {Link} from 'react-router-dom';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 
-
-
-
-
-
-
-
-export default class SignIn  extends Component {
+export default class LogIn  extends Component {
 
     state={
         form:{
@@ -32,7 +32,7 @@ export default class SignIn  extends Component {
         e.preventDefault()
         
         await axios.get(
-            ApiUrl + "user" ,
+          "http://localhost:3001/usuarios",
             {params:{
                 phone: this.state.form.phone, 
                 password: this.state.form.password 
@@ -51,7 +51,7 @@ export default class SignIn  extends Component {
                     sessionStorage.setItem('email',usuario.email);
                     sessionStorage.setItem('name',usuario.name);
                     sessionStorage.setItem('phone',usuario.phone);
-                    sessionStorage.setItem('coins',usuario.coins);
+                    sessionStorage.setItem('coins',usuario.img);
                     sessionStorage.setItem('id',usuario.id);
                     MySwal.fire({
                         title: <strong>Good job!</strong>,
@@ -59,7 +59,7 @@ export default class SignIn  extends Component {
                         icon: 'success'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            window.location = "/Footer2";
+                            window.location = "/wall";
                         } 
                     })
                 }else{
@@ -79,7 +79,7 @@ export default class SignIn  extends Component {
     render() {
         return (
             <Section>
-                <Form >
+                <Form>
                     <form>
                         <Textos1>
                             <h2>Welcome back</h2>
@@ -104,7 +104,7 @@ export default class SignIn  extends Component {
                                 onClick={this.handleLogin}>
                                 Login
                             </button>
-                            <p>Don't have account ?<Link to={`/SignUp`}>Sign up</Link></p>
+                            <p>Dont have account ?<Link to="/singup">Sign up</Link></p>
                         </DivBotonForm>
                     </form>
                 </Form>
@@ -112,23 +112,3 @@ export default class SignIn  extends Component {
         )
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

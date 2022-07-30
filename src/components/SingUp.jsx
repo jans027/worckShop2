@@ -1,27 +1,20 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { BotonReguistro } from '../styles/BotonReguistro'
-import { Section } from '../styles/Section'
-import { Enlace1 } from '../styles/Styles1'
-import { Textos1 } from '../styles/Textos1'
-import axios from 'axios'
-import { ApiUrl } from '../services/apirest'
 
+import axios from 'axios'
+
+import {Textos1, BotonReguistro,Enlace1, DivBotonForm, Section, Form } from '../styles/StylesGlobal'
 // sweat alert
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
-import { Form } from '../styles/Form'
+
 const MySwal = withReactContent(Swal)
 
 
 
 
 export default class SignUp extends Component {
-// sweat alert
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-import { Form } from '../styles/Form'
-const MySwal = withReactContent(Swal)
+
     state = {
         form: {
             name: '',
@@ -32,6 +25,30 @@ const MySwal = withReactContent(Swal)
         }
     }
 
+// envio los datos validos a la base de datos
+guardarUsuario = async () => {
+  await axios.post(
+    "http://localhost:3001/usuarios",
+      {
+          name: this.state.form.name,
+          email: this.state.form.email,
+          phone: this.state.form.phone,
+          password: this.state.form.password,
+          coins: this.state.form.coins,
+      })
+      .then(response => {
+          console.log('Exito')
+      })
+
+      
+.catch(error => {
+          console.log('Eoooo')
+          console.log(error);
+      })
+
+}
+
+    
     // capturo los datos del ususraio en tiempo real
     userChange = async e => {
         await this.setState({
@@ -113,7 +130,7 @@ const MySwal = withReactContent(Swal)
         e.preventDefault()
         
         await axios.get(
-            ApiUrl + "user" ,
+          "http://localhost:3001/usuarios",
             {params:{
                 phone: this.state.form.phone, 
                 password: this.state.form.password 
@@ -140,7 +157,7 @@ const MySwal = withReactContent(Swal)
                         icon: 'success'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            window.location = "/Footer2";
+                            window.location = "/login";
                         } 
                     })
                 }else{
@@ -156,7 +173,6 @@ const MySwal = withReactContent(Swal)
                 console.log(e);
             })
     }
-
 
 
     render() {
@@ -200,7 +216,7 @@ const MySwal = withReactContent(Swal)
                             <Link
                                 type="submit"
                                 onClick={this.validacion}
-                                to={`/SignUp`}>Next
+                                to="/login">Next
                             </Link>
                         </Enlace1>
                     </BotonReguistro>
@@ -210,3 +226,4 @@ const MySwal = withReactContent(Swal)
         )
     }
 }
+

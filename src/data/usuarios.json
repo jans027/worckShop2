@@ -1,0 +1,138 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Jorge Aquino",
+      "username": "jaquino",
+      "img": "https://res.cloudinary.com/dw32expwa/image/upload/v1657905797/samples/people/bicycle.jpg",
+      "email": "aquinosuarez@gmail.com",
+      "phone": "32032032300",
+      "password": "abc147116",
+      "coments": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "ndustry. Lorem Ipsum has been the industry's standard dummy"
+      ]
+     
+    },
+    {
+      "id": 2,
+      "name": "david vera",
+      "username": "david120",
+      "img": "https://res.cloudinary.com/dw32expwa/image/upload/v1657905802/samples/landscapes/nature-mountains.jpg",
+      "email": "davidvera@gmail.com",
+      "phone": "32032032300",
+      "password": "abc147116",
+      "coments": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "ndustry. Lorem Ipsum has been the industry's standard dummy"
+      ],
+      "imagenesRelacionadas": [
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905797/samples/people/bicycle.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905802/samples/landscapes/nature-mountains.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "carlos ruiz",
+      "username": "carlosruiz",
+      "img": "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+      "email": "carlosruiz@gmail.com",
+      "phone": "32032032300",
+      "password": "abc147116",
+      "coments": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "ndustry. Lorem Ipsum has been the industry's standard dummy"
+      ],
+      "imagenesRelacionadas": [
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905797/samples/people/bicycle.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905802/samples/landscapes/nature-mountains.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "paola osorio",
+      "username": "paola10",
+      "img": "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg",
+      "email": "paola10@gmail.com",
+      "phone": "32032032300",
+      "password": "abc147116",
+      "coments": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "ndustry. Lorem Ipsum has been the industry's standard dummy"
+      ],
+      "imagenesRelacionadas": [
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905797/samples/people/bicycle.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905802/samples/landscapes/nature-mountains.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "carlos ruiz",
+      "username": "carlosruiz",
+      "img": "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+      "email": "carlosruiz@gmail.com",
+      "phone": "32032032300",
+      "password": "abc147116",
+      "coments": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "ndustry. Lorem Ipsum has been the industry's standard dummy"
+      ],
+      "imagenesRelacionadas": [
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905797/samples/people/bicycle.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905802/samples/landscapes/nature-mountains.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "paola osorio",
+      "username": "paola10",
+      "img": "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg",
+      "email": "paola10@gmail.com",
+      "phone": "32032032300",
+      "password": "abc147116",
+      "coments": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "ndustry. Lorem Ipsum has been the industry's standard dummy"
+      ],
+      "imagenesRelacionadas": [
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905797/samples/people/bicycle.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905802/samples/landscapes/nature-mountains.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg"
+      ]
+    },
+    {
+      "name": "fernando",
+      "email": "fernando74@gmail.com",
+      "img": "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg",
+      "phone": "3217603238",
+      "password": "abc147116",
+      "id": 7,
+      "coments": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text",
+        "ndustry. Lorem Ipsum has been the industry's standard dummy"
+      ],
+      "imagenesRelacionadas": [
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905797/samples/people/bicycle.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905802/samples/landscapes/nature-mountains.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905795/samples/people/boy-snow-hoodie.jpg",
+        "https://res.cloudinary.com/dw32expwa/image/upload/v1657905789/samples/people/kitchen-bar.jpg"
+      ]
+    }
+  ]
+}
