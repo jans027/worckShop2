@@ -188,7 +188,7 @@ background-color: #8e44ad;
    
    
    export const SpinnerStyled = styled.div`
-        with: 100%;
+        /* with: 100%; */
         height: 90vh;
         background-color: #FFF;
         display: flex;

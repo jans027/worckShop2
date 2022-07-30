@@ -19,7 +19,7 @@ class AppRoutes extends Component {
                    
                     <Routes>
                      
-                    
+                    <Route path="/" element={<LogIn />} />
                     <Route path="/detalleuser" element={<DetalleUser />} />
                     <Route path="/wall" element={<Wall />} />
                         <Route path="/singup" element={<SingUp />} />
